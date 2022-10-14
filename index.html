@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+    <h3>CSV-Ws generated are as below. The latest commit id is 097335d291c5478d255df88815e8d79ad03ddbd1.</h3>
+    <div id="files-container"></div>
+    <script type="text/javascript">
+      var html_str = "<ul>";
+      var files = ",./out/sweden_at_eurovision_no_missing/year.csv,./out/sweden_at_eurovision_no_missing/language.csv-metadata.json,./out/sweden_at_eurovision_no_missing/song.csv-metadata.json_inspect_output.txt,./out/sweden_at_eurovision_no_missing/entrant.csv-metadata.json,./out/sweden_at_eurovision_no_missing/language.csv,./out/sweden_at_eurovision_no_missing/year.table.json,./out/sweden_at_eurovision_no_missing/entrant.csv,./out/sweden_at_eurovision_no_missing/language.csv-metadata.json_inspect_output.txt,./out/sweden_at_eurovision_no_missing/entrant.table.json,./out/sweden_at_eurovision_no_missing/song.csv,./out/sweden_at_eurovision_no_missing/year.csv-metadata.json_inspect_output.txt,./out/sweden_at_eurovision_no_missing/language.table.json,./out/sweden_at_eurovision_no_missing/entrant.csv-metadata.json_inspect_output.txt,./out/sweden_at_eurovision_no_missing/song.table.json,./out/sweden_at_eurovision_no_missing/sweden-at-eurovision-no-missing.csv-metadata.json_inspect_output.txt,./out/sweden_at_eurovision_no_missing/song.csv-metadata.json,./out/sweden_at_eurovision_no_missing/year.csv-metadata.json,./out/sweden_at_eurovision_no_missing/sweden-at-eurovision-no-missing.csv-metadata.json,./out/sweden_at_eurovision_no_missing/sweden-at-eurovision-no-missing.csv".split(',');
+      files.shift()
+      files.sort()
+      files.forEach(function(file) {
+        file = file.replace("./","")
+        link = "https://SarahJohnsonONS.github.io/my-csv-to-csvw-action/"+file
+        html_str += "<li>"+"<a href='"+ link + "'>"+file+"</a></li>";
+      });
+      html_str += "</ul>";
+      document.getElementById("files-container").innerHTML = html_str;
+    </script>
+  </body>
+</html>
